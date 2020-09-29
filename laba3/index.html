@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>main</title>
+</head>
+
+<body>
+    <h1>Лабораторна робота №3</h1>
+    <h2>Виконав Бураков М.В КН-31</h2>
+    <h3>Завдання</h3>
+    <p> Необхідно розробити форму для введення товару да веб-системи. Необхідно заповнити наступні данні:</p>
+    <ul>
+        <li>Дані про товар, включають назву товару, тип товари(вибирається зі
+            списку), дату виробництва, ціну, кількість на складі (ціле число від 1 до
+            100000).
+        </li>
+        <li>Дані про виробника, включають назву, юридичну адресу, електрону
+            пошту, посилання на веб-сайт, коментарі.
+        </li>
+    </ul>
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Товар</legend>
+            <label>
+                Назва товару <input id="product_name" type="text">
+            </label>
+            <lable>
+                Тип
+                <select>
+                    <option>Товари повсякденного попиту</option>
+                    <option>Товари тривалого попиту</option>
+                    <option>Товари короткочасного користування</option>
+                </select><br>
+            </lable>
+            <label>
+                Дата вироблення <input id="product_year" type="date"><br>
+            </label>
+            <label>
+                Ціна <input id="product_price" type=number min="1" max="any" step="0.01">
+            </label>
+            <label>
+                Кількість екземплярів <input id="book_number" type=number min="1" max="20">
+            </label>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Виробник</legend>
+            <label>
+                Назва виробника <input id="producer_name" type="text">
+            </label>
+            <label>
+                Юридична адреса <input id="producer_addr" type="text"><br>
+            </label>
+            <label>
+                Пошта <input id="producer_addr" type="email">
+            </label>
+            <label>
+                Сайт <a href="http://aermolenko.ru/2020/03/python-obrabotka-html-form/">Сайт</a><br>
+            </label>
+            <label>
+                Коментарі <textarea rows="5" cols="50"></textarea>
+            </label>
+        </fieldset>
+        <button type="submit">Відправити</button>
+
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+body{
+    background-color: #013220;
+    color:yellow
+}
+a{
+    color: red;
+}
+.p_pink_bold{
+    color: pink;
+    font-size: 28;
+    font-weight: bolder;
+    text-align:left
+}
+.p_underline{
+    font-size: 25;
+    text-align: left;
+    text-decoration: underline;
+
+}
+i{
+    color: red;
+}
+.p_size{
+    font-size: 25;
+}
+.img_left{
+    float: left;
+}
+.img_right{
+    float: right;
+}
