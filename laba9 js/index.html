@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Заголовок</title>
+    <link type="text/css" rel="stylesheet" href="../laba8 js/css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <main class="b-main">
+        <header class="b-header">
+            <h1>Лаб робота №2 JavaScript</h1>
+            <h2>Виконав Бураков Максим Вадимович</h2>
+        </header>
+        <ul class="menu-main">
+            <li><a href="../laba8 js/index.html">Лаб робота 1</a></li>
+            <li><a href="">Лаб робота 2</a></li>
+            <li><a href="">Лаб робота 3</a></li>
+            <li><a href="">Лаб робота 4</a></li>
+        </ul>
+        <h2>Завдання на лаб роботу</h2>
+        <div class="b-div-zadanie">
+           На вашій сторінці є кнопка. При наведенні на неї вивести текст.
+           <br>Ввести групу, прізвище студента та курс. Якщо неправильно вказано курс
+           <br>вивести попередження, інакше вивести повне ім'я студента.
+        </div>
+        <label>
+            Група <input id="Group" type="number">
+        </label>
+        <label>
+            Прізвище <input id="Surname">
+        </label>
+        <label>
+            Курс<input type="number" id="Course">
+        </label>
+        <button class="b-button" onmouseover="show_student_data()" onmouseout="clear_all()">Кнопка</button>
+        <div id="result_button" ></div>
+
+
+    </main>
+</body>
+</html>
