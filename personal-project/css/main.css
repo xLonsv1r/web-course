@@ -1,0 +1,32 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+ margin-top: -20px;
+ 
+}
+
+.header ul li{
+    display: inline;
+    font-size: x-large;
+    
+    padding-left: 100px;
+    margin-left: 100px;
+    
+}
+.header ul{
+    background-color:darkgrey;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.firstpage{
+    margin-left: 100px;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url('../images/first_page_background.png');
+
+}
