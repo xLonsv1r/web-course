@@ -14,8 +14,8 @@ function show_student_data(){
     
     var html = "";
     if(studentCourseValue != "" && studentGroupValue !="" && studentSurnameValue !=""){
-        if(studentGroup.value.toString()[0] != studentCourse.value.toString()[0]){
-            html = "<h2>Група та курс мають різна значення!</h2>"
+        if(studentGroup.value.toString()[0] != studentCourse.value.toString()){
+            html = "<h2>Група та курс мають різні значення!</h2>"
         }
         else{
             html = "<h2>Інформація про студента</h2>"

@@ -6,13 +6,13 @@ exhibitions[0] = {
     theme:"Cats",
     place:"A",
     organizer:"Cats lovers",
-    Data: "2.11.2020"
+    Data: "11.11.2020"
 }
 exhibitions[1] = {  
     theme:"Dogs",
     place:"B",
     organizer:"Dogs lovers",
-    Data: "31.10.2020"
+    Data: "15.11.2020"
 }
 exhibitions[2] = {  
     theme:"Rats",
@@ -24,7 +24,7 @@ exhibitions[3] = {
     theme:"Rats",
     place:"C",
     organizer:"",
-    Data: "5.10.2020"
+    Data: "3.10.2020"
 }
 exhibitions[4] = {  
     theme:"test",
