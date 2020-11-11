@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Заголовок</title>
+    <link type="text/css" rel="stylesheet" href="../laba8 js/css/main.css">
+    <link type="text/css" rel="stylesheet" href="../laba9 js/css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <main class="b-main">
+        <header class="b-header">
+            <h1>Лаб робота №3 JavaScript</h1>
+            <h2>Виконав Бураков Максим Вадимович</h2>
+        </header>
+        <ul class="menu-main">
+            <li><a href="../laba8 js/index.html">Лаб робота 1</a></li>
+            <li><a href="../laba9 js/index.html">Лаб робота 2</a></li>
+            <li><a href="">Лаб робота 3</a></li>
+            <li><a href="../laba11 js/index.html">Лаб робота 4</a></li>
+        </ul>
+        <h2>Завдання 1</h2>
+        <div class="b-div-first-task">
+            Дано блок з кнопкою &#39;закрити блок&#39;. При натисканні на цю кнопку блок
+            <br>повинен зникнути з форми. Кнопка розміщується всередині блоку і повинна
+            <br>зникнути разом з ним. Блоків може бути будь-яка кількість, допускається щоб
+            <br>один з блоків був всередині іншого. Кожен блок закриває своя кнопка.
+        </div>
+        <div class="block-1" id="block-1">
+            <div class="b-button" onclick="hideFirstBlock()">
+                close block1
+            </div>
+            <div class="block-2" id="block-2">
+                <div class="b-button" onclick="hideSecondBlock()">
+                close block2
+                </div>
+                
+            </div>
+        </div>
+        <h2>Завдання 2</h2>
+        <div class="b-div-second-task">
+            Дана таблиця з числами. При натисканні на комірку, вона активується і
+            <br>стає червоного кольору. Активувати можна багато комірок. Під таблицею
+            <br> кнопка. При натисканні цієї кнопки в абзац нижче виведіть суму активованих
+            <br>комірок. Реалізуйте також кнопку &quot;скинути активовані комірки&quot;.
+        </div>
+        <table class="b-table" id="table1" onclick="select_number()">
+            <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+            <tr><td>5</td><td>6</td><td>7</td><td>8</td></tr>
+        </table>
+        <button class="b-button" onclick="sum_selected_items()">Сума активованих комірок</button>
+        <div id="sum-selected-numbers"></div>
+        <button class="b-button" onclick="clear_table()">Скинути активовані комірки</button>
+
+    </main>
+</body>
+</html>
