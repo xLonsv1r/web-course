@@ -8,15 +8,15 @@
     <h1>Лабораторная робота номер 11</h1>
     <h2>Виконав студент групи КН-31 Бураков Максим</h2>
     <ul class="menu-main">
-        <li><a href="#">Табулювання функції на заданому інтервалі.</a></li>
-        <li><a href="#">Рядки та масиви</a></li>
-        <li><a href="#">Обробка файлів</a></li>
-        <li><a href="#">Обробка двомірних масивів</a></li>
+        <li><a href="{{ url_for('login') }}">Табулювання функції на заданому інтервалі.</a></li>
+        <li><a href="{{ url_for('OneDimArrays') }}">Рядки та масиви</a></li>
+        <li><a href="{{ url_for('Files') }}">Обробка файлів</a></li>
+        <li><a href="{{ url_for('TwoDimArrays') }}">Обробка двомірних масивів</a></li>
     </ul>
     {% block content %} {% endblock %}
     <footer>
         <div class="footer-example">
-            Пример
+           Footer Пример
         </div>
     </footer>
 </body>

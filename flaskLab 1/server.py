@@ -15,6 +15,19 @@ def login():
     else:
         return render_template("login.html")
 
+@app.route('/OneDimArrays', methods=["POST", "GET"])
+def OneDimArrays():
+    return render_template("OneDimArrays.html")
+
+@app.route('/TwoDimArrays', methods=["POST", "GET"])
+def TwoDimArrays():
+    return render_template("TwoDimArrays.html")
+
+@app.route('/Files', methods=["POST", "GET"])
+def Files():
+    return render_template("files.html")
+
+
 @app.route('/<usr>')
 def user(usr):
     return f"<h1>{usr}</h1>"
