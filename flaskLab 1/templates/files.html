@@ -2,5 +2,12 @@
 {% block title %}Index{% endblock %}
 
 {% block content %}
-    Work with files
+    <h1>{{ count }}</h1>
+
+    <table>
+        <tr><td>Значення</td><td>Кількість</td></tr>
+        {% for key, value in dictArray.items() %}
+            <tr><td>{{key}}</td><td>{{value}}</td></tr>
+        {% endfor %}
+    </table>
 {% endblock %}

@@ -17,6 +17,7 @@ h2{
     text-align: center;
 }
 .menu-main li{
+    margin-top: 10px;
     display: inline-block;
 }
 .menu-main li:after{

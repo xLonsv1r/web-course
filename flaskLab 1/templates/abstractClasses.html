@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+
+{% block content %}
+    <h1>Work with Abstract Classes</h1>
+    <h1>Max factory height {{ maxFactoryHeight}}</h1>
+    <table>
+        <tr><td>Name</td><td></td><td>Height</td></tr>
+        {% for name, height in factories.items() %}
+            <tr><td>{{name}}</td><td></td><td>{{height}}</td></tr>
+        {% endfor %}
+    </table>
+    <h1>Max office height {{ maxOfficeHeight}}</h1>
+    <table>
+        <tr><td>Name</td><td></td><td>Height</td></tr>
+        {% for name, height in offices.items() %}
+            <tr><td>{{name}}</td><td></td><td>{{height}}</td></tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}

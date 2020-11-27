@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Func page{% endblock %}
+
+{% block content %}
+    <p>
+        Написати на мові програмування python підпрограмму для табулювання
+        функції на заданому інтервалі.  
+    </p>
+    <form action="#" method="post">
+        <p>f1: <img src="../static/images/f1.png"> </p>
+        <p>f2: <img src="../static/images/f2.png"> </p>
+        <p>f3: <img src="../static/images/f3.png"> </p>
+        <p>Начальное значение xn: -2.25 </p>
+        <p>Конечное значение xk: 34.9 </p>
+        <p>Шаг xh: 0.5 </p>
+        <p style="color: green;">{{content}}</p>
+        <p> <input type="submit" value="submit"/></p>
+    </form>
+{% endblock %}

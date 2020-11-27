@@ -6,4 +6,14 @@
         Створіть двовимірний цілочисельний масив А [10, 7] і знайдіть суму всіх
         його елементів, що мають обидва непарних індекса.
     </p>
+    <h1>{{ sumMatrix }}</h1>
+    <table>
+    {% for i in range(lengthN) %}
+        <tr>
+        {% for j in range(lengthM) %}
+            <td>{{matrix[i][j]}}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+    </table>
 {% endblock %}
