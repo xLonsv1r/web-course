@@ -36,6 +36,16 @@ function randomRapair(){
 
     return Math.round((Math.random() * 1) + 0) === 0;
 }
+function randomInteger(min, max) {
+    // случайное число от min до (max+1)
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
+}
+var streets  = ['Софиевская','Льва Толстого', 'Крещатик','Софиевская', 'Саксаганского'];
+function randomStreetName(){
+    randomStreet = randomInteger(0, streets.length - 1);
+    return streets[randomStreet];
+}
 function show_table(){
     let n = document.getElementById('numberRowItems').value;
     if(n <= 0 ){
@@ -43,13 +53,13 @@ function show_table(){
     }
     console.log(n);
     let html = "<table class='b-table'>";
-    html += "<tr class='b-table__th'><td>adress</td><td>Rooms number</td><td>Price</td><td>Repared</td></tr>";
+    html += "<tr class='b-table__th'><td>Адреса</td><td>Кількість кімнат</td><td>Ціна</td><td>Ремонт</td></tr>";
     n++;
     for(let i = 1; i < n; i++){
         let isRapair = randomRapair();
         console.log(isRapair);
         let housePrice = calculatePrice(i,isRapair);
-        adress = i.toString() + "street";
+        adress = randomStreetName();
         let apartment = new Apartment(adress, i, housePrice, isRapair);
         html += apartment.show();
     }
