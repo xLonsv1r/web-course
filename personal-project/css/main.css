@@ -9,6 +9,7 @@ html, body{
 
 .content{
     width: auto;
+    background-color: rgb(59, 59, 59);
 }
 .header ul li{
     display: inline;
@@ -33,7 +34,7 @@ html, body{
     align-items: center;
     height: 100vh;
     background-repeat: no-repeat;
-    background-color: darkred;
+
     background-image: url('../images/first_page_background.png');
 }
 .firstPage-upper-text{
@@ -81,8 +82,8 @@ html, body{
     margin-top: 10px;
     margin-left: 120px;
     margin-right: 120px;
-    background-color:silver;
-
+    background-color:rgb(24, 22, 22);
+    color: white;
 }
 
 .secondPage-upper-text{
@@ -128,7 +129,8 @@ html, body{
     margin-top: 10px;
     margin-left: 120px;
     margin-right: 120px;
-    background-color:silver;
+    background-color:rgb(24, 22, 22);
+    color: white;
 }
 
 .thirdPage-Electro{
@@ -171,7 +173,8 @@ html, body{
     margin-top: 10px;
     margin-left: 120px;
     margin-right: 120px;
-    background-color:silver;
+    background-color:rgb(24, 22, 22);
+    color: white;
 }
 
 .fourthPage-upper-text{
@@ -201,10 +204,59 @@ html, body{
     margin-top: 10px;
     margin-left: 120px;
     margin-right: 120px;
-    background-color:silver;
+    background-color:rgb(24, 22, 22);
+}
+
+.fifthPage-header-text{
+    font-size: 30px;
+    color: white;
+}
+.fifthPage-Upper-text{
+    color: white;
+}
+.fifthPage-footer-text{
+    color: white;
 }
 
 /* <-- Sixth page -->*/
+
+.sixthPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 120vh;
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color:rgb(24, 22, 22);
+    color: white;
+}
+.sixthPage-Up-Images{
+    display: flex;
+    flex-direction: row;
+}
+.sixthPage-header-text{
+    font-size: 30px;
+}
+.sixthPage-Up-Images-first{
+    margin: 40px;
+}
+.sixthPage-Up-Images-second{
+    margin:40px;
+}
+.sixthPage-Down-Images-first{
+    margin: 40px;
+}
+.sixthPage-Down-Images-second{
+    margin: 40px;
+    margin-left: 60px;
+}
+
+.sixthPage-Down-Images{
+    display: flex;
+    flex-direction: row;
+}
 
 
 /* <-- Seventh page -->*/
