@@ -1,4 +1,3 @@
-
 html, body{
     margin: 0;
     padding: 0;
@@ -8,6 +7,9 @@ html, body{
  
 }
 
+.content{
+    width: auto;
+}
 .header ul li{
     display: inline;
     font-size: x-large;
@@ -21,12 +23,188 @@ html, body{
     padding-bottom: 40px;
     padding-top: 20px;
 }
-
-.firstpage{
-    margin-left: 100px;
-    width: 100%;
+/* <-- First page -->*/
+.firstPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+    align-items: center;
     height: 100vh;
     background-repeat: no-repeat;
+    background-color: darkred;
     background-image: url('../images/first_page_background.png');
+}
+.firstPage-upper-text{
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+.firstPage-lower-text{
+    margin-top: 400px;
+    color: white;
+    font-size: xx-large;
+}
+.firstPage-consultation{
+    margin-bottom: 100px; 
+    display: flex; 
+    justify-content: space-between;
+    
+}
+
+.firstPage-form{
+    display: flex;
+    justify-content: space-between;   
+}
+#firstInputEmail{
+    font-size: 20px;
+    margin-left: -50px;
+}
+
+#firstGetEmailBtn{
+    margin-left: 60px;
+    font-size:20px;
+    padding: 15px 32px;
+    text-align: center;
+}
+
+
+
+/* <-- Second page -->*/
+.secondPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color:silver;
 
 }
+
+.secondPage-upper-text{
+    text-align: center;
+}
+.secondPage-images{
+    display: flex;
+    justify-content: space-around;
+  
+    align-self:stretch
+}
+
+.secondPage-consultation{
+    margin-bottom: 100px; 
+    display: flex; 
+    justify-content: space-between;
+    
+}
+
+
+.secondPage-form{
+    display: flex;
+    justify-content: space-between;  
+}
+#secondInputEmail{
+    font-size: 20px;
+    margin-left: -50px;
+}
+
+#secondGetEmailBtn{
+    margin-left: 60px;
+    font-size:20px;
+    padding: 15px 32px;
+    text-align: center;
+}
+/* <-- Third page -->*/
+.thirdPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color:silver;
+}
+
+.thirdPage-Electro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self:stretch;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.thirdPage-Electro-Text{
+    margin-left: 50px;
+}
+
+.thirdPage-Mechanic{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-self:stretch
+}
+.thirdPage-Mechanic-Text{
+    margin-left: 50px;
+}
+.thirPage-Elector-Text-Header{
+    text-align: center;
+}
+.thirPage-Mechanic-Text-Header{
+    text-align: center;
+}
+/* <-- Fourth page -->*/
+
+.fourthPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color:silver;
+}
+
+.fourthPage-upper-text{
+    font-size: 30px;
+}
+.fourthPage-images{
+    display: flex;
+    align-self:stretch;
+    justify-content: space-around;
+}
+
+#fourthGetEmailBtn{
+    margin-left: 60px;
+    font-size:20px;
+    padding: 15px 32px;
+    text-align: center;
+}
+
+
+/* <-- Fifth page -->*/
+.fifthPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color:silver;
+}
+
+/* <-- Sixth page -->*/
+
+
+/* <-- Seventh page -->*/
