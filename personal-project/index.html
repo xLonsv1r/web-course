@@ -6,16 +6,25 @@
         <link type="text/css" media="all" rel="stylesheet" href="css/main.css" />
     </head>
     <body>
+        
         <div class="content">
-
-            <header class="header">
-                <ul>
-                    <li>Про сцена</li>
-                    <li>Есть вопросы? Звоните</li>
-                    <li>+3808414142</li>
-                </ul>
-            </header>
-            <div class="firstPage">
+            
+            <header>
+                <nav>
+                    <ul class="topmenu">
+                      <li><a href="#fifthPage">Фотографии</a></li>
+                      <li><a href="" class="submenu-link">Виды</a>
+                        <ul class="submenu">
+                          <li><a href="#fourthPage">Виды стульев</a></li>
+                          <li><a href="#thirdPage">Варинаты трибун</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#fifthPage">Проекты</a></li>
+                      <li><a href="#bot">Контакты</a></li>
+                    </ul>
+                  </nav>
+              </header>
+            <div class="firstPage" id="firstPage">
                 <div class="firstPage-upper-text">
                     <b>Мы - производитель телескопических трибун на выгодных  условиях!</b>
                 </div>
@@ -24,23 +33,23 @@
                 </div>
                 <div class="firstPage-consultation">
                     <form class="firstPage-form">
-                        <input id="firstInputEmail" placeholder="Ведите mail" type="email">                    
+                        <input id="firstInputEmail" placeholder="Введите mail" type="email">                    
                         <button id="firstGetEmailBtn" type="submit">Получить</button>
                     </form>
                 </div>
             </div>
 
-            <div class="secondPage">
+            <div class="secondPage" id="secondPage">
 
                 <div class="secondPage-upper-text">
                     <b>Готовые решения трибун под ваши мероприятия</b>
                 </div>
                 <div class="secondPage-images">
                     <div class="firstImage">
-                        <img src="./images/secondPageLeft.png" width="400" height="350">
+                        <img src="./images/secondPageLeft.png" width="400px" height="350px" id="firstImage">
                     </div>
                     <div class="secondImage">
-                        <img src="./images/secondPageRight.png" width="400" height="350">
+                        <img src="./images/secondPageRight.png" width="400" height="350" id="secondImage">
                     </div>
                 </div>
                 <div class="secondPage-lower-text">
@@ -48,73 +57,76 @@
                 </div>
                 <div class="secondPage-consultation">
                     <form class="secondPage-form">
-                        <input id="secondInputEmail" placeholder="Ведите mail" type="email">                    
+                        <input id="secondInputEmail" placeholder="Введите mail" type="email">                    
                         <button id="secondGetEmailBtn" type="submit">Получить</button>
                     </form>
                 </div>
             </div>
 
-            <div class="thirdPage">
+            <div class="thirdPage" id="thirdPage">
                 <div class="thirdPage-upper-text">
                     <b>Существует несколько видов механизма складывания трибун</b>
                 </div>
                 <div class="thirdPage-Electro">
                     <div class="thirPage-Electro-Image">
-                        <img src="./images/secondPageRight.png" width="400" height="350">
+                        <img src="./images/secondPageRight.png" width="250" height="250">
                     </div>
                     <div class="thirdPage-Electro-Text">
                         <div class="thirPage-Elector-Text-Header">
                             <b>Электропривод</b>
                         </div>
                         <div class="thirdPage-Electro-Text-Main">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum tenetur porro blanditiis. Aliquid, delectus ad. Cumque veritatis tempora animi natus itaque harum quam fuga debitis adipisci, illum, neque optio eos.
-                        Provident veniam quaerat dolore unde dignissimos doloremque aliquid, cum officiis officia facere at deleniti neque repudiandae ipsa, sint dolorum iusto voluptate pariatur atque doloribus. Exercitationem similique veniam ipsum quod nulla!
-                        Eos magnam aspernatur, quaerat ratione optio sunt ex dolorum laboriosam odio temporibus odit, beatae quam magni eligendi voluptatibus sapiente ad sed cum soluta adipisci libero inventore, et ipsam error. Et.
-                        Quasi ducimus sapiente molestias cum delectus exercitationem, modi minima dolore numquam deserunt ipsa ab nam earum necessitatibus blanditiis expedita veritatis. Soluta obcaecati et nemo dolorum temporibus est nesciunt? Consectetur, illo.
-                        Aliquam sequi tenetur debitis, quia dolores obcaecati voluptatibus cumque, hic repellendus ipsum magnam earum consequatur nostrum consectetur temporibus, deleniti ratione commodi ipsa perferendis necessitatibus distinctio. Doloribus incidunt ipsa nostrum expedita.
+                            Телескопическая трибуна с электроприводом - удобный механизм, не требующий физических усилий. Управление не требует специальных навыков.
+
+                            <br><b>Тип каркаса:</b>  профильная труба 50х50 мм.
+
+                            <br><b>Тип привода:</b> электрический.
+
+                            <br><b>Материал сиденья:</b> пластик
                         </div>
                         
                     </div>
                 </div>
                 <div class="thirdPage-Mechanic">
                     <div class="thirPage-Mechanic-Image">
-                        <img src="./images/secondPageRight.png" width="400" height="350">
+                        <img src="./images/secondPageRight.png" width="250" height="250">
                     </div>
                     <div class="thirdPage-Mechanic-Text">
                         <div class="thirPage-Mechanic-Text-Header">
                             <b>Механический привод</b>
                         </div>
                         <div class="thirdPage-Mechanic-Text-Main">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit sed quasi ullam repudiandae porro doloremque delectus laboriosam iure optio! Dolorem doloremque nemo exercitationem omnis voluptatum aperiam laudantium ea itaque.
-                       Animi, fugiat quod. Porro rerum atque eos saepe culpa doloribus accusantium, illum iusto facilis quis minima. A eaque cum ad libero, eos magni magnam repellat impedit quia molestiae eius inventore?
-                       Quod, beatae. Cumque itaque voluptas commodi eos reprehenderit vero? Minus debitis eos quod illo sint adipisci quo maxime at fuga? Dolore et recusandae aut eos saepe adipisci, cupiditate asperiores odit!
-                       Atque, fugiat itaque optio quae accusamus illum officia dicta similique aperiam! Debitis neque exercitationem laudantium quos impedit dolore a vero rem? Dolore corrupti, provident distinctio ex unde aliquam totam placeat.
-                       Laborum cum atque iusto aperiam perspiciatis corrupti labore unde modi expedita, nihil molestiae assumenda, dolorum debitis libero totam dolore voluptatem, harum similique provident tempore quibusdam ad! Quae nemo labore est?
+                            Телескопическая трибуна с ручным приводом - не требует особых навыков при использовании, с раздвижением справится <br> один-два человека.
+
+                            <br><b>Тип каркаса:</b>  профильная труба 50х50 мм.
+                            
+                            <br><b>Тип привода:</b> ручной.
+                            
+                           <br> <b>Материал</b> сиденья: пластик
                         </div>
                        
                     </div>
                 </div>
             </div>
 
-            <div class="fourthPage">
+            <div class="fourthPage" id="fourthPage">
                 <div class="fourthPage-upper-text">
                    <b>Чем руководствоваться <br>при выборе материала для сидений?</b>
                 </div>
                 <div class="fourthPage-images">
                     <img src="./images/fourthPageChairs.png" width="250" height="250">
-                    <img src="./images/fourthPageChairs.png" width="250" height="250">
+                    <img src="./images/SecondChair.png" width="250" height="250">
                     <img src="./images/fourthPageChairs.png" width="250" height="250">
                     <img src="./images/fourthPageChairs.png" width="250" height="250">
                 </div>
-                <div class="fourthPage-consultation">
-                    <div class="fourthPage-consultation">               
-                        <button id="fourthGetEmailBtn" type="submit">Скачать руководство</button>
-                    </div>
+                <div class="fourthPage-consultation">               
+                    <button id="fourthGetEmailBtn" type="submit">Скачать руководство</button>
                 </div>
+                
             </div>
 
 
-            <div class="fifthPage">
+            <div class="fifthPage" id="fifthPage">
                 <div class="fifthPage-header-text">
                        <b>Фотографии рабочих процесов</b>
                 </div>
@@ -145,7 +157,7 @@
                </div>
             </div>
 
-            <div class="sixthPage">
+            <div class="sixthPage" id="sixthPage">
 
                 <div class="sixthPage-header-text">
                     <b>Наши объекты</b>
@@ -157,7 +169,7 @@
                 </div>
                 <div class="sixthPage-Images">
                     <div class="sixthPage-Up-Images">
-                        <div class="sixthPage-Up-Images-first">
+                        <div class="sixthPage-Up-Images-first" >
                             <img class="upImage" src="./images/object1.png" width="250" height="250">
                             <div class="underText">
                                 Трибуна сборная с навесом на 200 мест
@@ -189,9 +201,16 @@
                 </div>
             </div>
 
-
+            <div class="map-page">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d267.06907203148677!2d30.517467222670557!3d50.44476020637821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce56337ef765%3A0xb76dcb6a9ae15146!2z0YPQuy4g0J_Rg9GI0LrQuNC90YHQutCw0Y8sIDE4LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1606772438281!5m2!1sru!2sua" width="500" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
             <footer>
-
+                <div class="footer-telephone" id="bot">
+                    <br>Adr: Geroev Kieva 251
+                    <br>Telephone: +3049140214
+                    <br>Email: hoged@gmail.com
+                </div>
+                
             </footer>
         </div>
     </body>

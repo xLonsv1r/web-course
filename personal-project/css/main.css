@@ -2,28 +2,103 @@ html, body{
     margin: 0;
     padding: 0;
 }
+.topmenu:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .topmenu > li {
+    width: 25%;
+    float: left;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .topmenu > li > a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #404040;
+    padding: 15px 30px;
+  }
+  .topmenu li a:hover { color: #D5B45B; }
+  .submenu-link:after {
+
+    font-family: "FontAwesome";
+    color: inherit;
+    margin-left: 10px;
+  }
+  .submenu {
+    background: #273037;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    width: 180px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+  }
+  .submenu a {
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+  .submenu li:last-child a { border-bottom: none; }
+  .topmenu > li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  header {
+    background: white;
+    text-align: center;
+  }
+  header a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    transition: .3s ease-in-out;
+  }
+nav {
+    display: table;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 .header{
  margin-top: -20px;
- 
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: black;
+}
 .content{
     width: auto;
     background-color: rgb(59, 59, 59);
 }
-.header ul li{
+/*.header ul li{
     display: inline;
     font-size: x-large;
     
     padding-left: 100px;
-    margin-left: 100px;
+    margin-left: 100px;  
     
-}
+}*/
+/*
 .header ul{
     background-color:darkgrey;
     padding-bottom: 40px;
     padding-top: 20px;
 }
+
 /* <-- First page -->*/
 .firstPage{
     display: flex;
@@ -34,7 +109,7 @@ html, body{
     align-items: center;
     height: 100vh;
     background-repeat: no-repeat;
-
+    
     background-image: url('../images/first_page_background.png');
 }
 .firstPage-upper-text{
@@ -61,6 +136,7 @@ html, body{
 #firstInputEmail{
     font-size: 20px;
     margin-left: -50px;
+    text-align: center;
 }
 
 #firstGetEmailBtn{
@@ -79,7 +155,7 @@ html, body{
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    margin-top: 10px;
+    
     margin-left: 120px;
     margin-right: 120px;
     background-color:rgb(24, 22, 22);
@@ -87,6 +163,8 @@ html, body{
 }
 
 .secondPage-upper-text{
+    margin-top: 40px;
+    font-size: xx-large;
     text-align: center;
 }
 .secondPage-images{
@@ -102,7 +180,9 @@ html, body{
     justify-content: space-between;
     
 }
-
+.secondPage-lower-text{
+    font-size: xx-large;
+}
 
 .secondPage-form{
     display: flex;
@@ -111,6 +191,7 @@ html, body{
 #secondInputEmail{
     font-size: 20px;
     margin-left: -50px;
+    text-align: center;
 }
 
 #secondGetEmailBtn{
@@ -131,8 +212,15 @@ html, body{
     margin-right: 120px;
     background-color:rgb(24, 22, 22);
     color: white;
+    font-size: x-large;
 }
 
+.thirdPage-upper-text{
+    font-size: 20px;
+    padding: 2px;
+    text-align: center;
+    margin-top: 50px;
+}
 .thirdPage-Electro{
     display: flex;
     flex-direction: row;
@@ -140,6 +228,7 @@ html, body{
     align-self:stretch;
     margin-left: 50px;
     margin-right: 50px;
+    padding-top: 50px;
 }
 .thirdPage-Electro-Text{
     margin-left: 50px;
@@ -151,7 +240,8 @@ html, body{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    align-self:stretch
+    align-self:stretch;
+    padding-bottom: 50px;
 }
 .thirdPage-Mechanic-Text{
     margin-left: 50px;
@@ -191,8 +281,11 @@ html, body{
     font-size:20px;
     padding: 15px 32px;
     text-align: center;
-}
 
+}
+.fourthPage-consultation{
+        padding-bottom: 50px;
+}
 
 /* <-- Fifth page -->*/
 .fifthPage{
@@ -200,11 +293,12 @@ html, body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 140vh;
     margin-top: 10px;
     margin-left: 120px;
     margin-right: 120px;
     background-color:rgb(24, 22, 22);
+    font-size: x-large;
 }
 
 .fifthPage-header-text{
@@ -213,9 +307,11 @@ html, body{
 }
 .fifthPage-Upper-text{
     color: white;
+    padding-top: 50px;
 }
 .fifthPage-footer-text{
     color: white;
+    padding-bottom: 50px;
 }
 
 /* <-- Sixth page -->*/
@@ -225,12 +321,13 @@ html, body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 120vh;
+    height: 140vh;
     margin-top: 10px;
     margin-left: 120px;
     margin-right: 120px;
     background-color:rgb(24, 22, 22);
     color: white;
+    font-size: large;
 }
 .sixthPage-Up-Images{
     display: flex;
@@ -250,7 +347,7 @@ html, body{
 }
 .sixthPage-Down-Images-second{
     margin: 40px;
-    margin-left: 60px;
+    margin-left: 85px;
 }
 
 .sixthPage-Down-Images{
@@ -258,5 +355,81 @@ html, body{
     flex-direction: row;
 }
 
+.sixthPage-Upper-text{
 
-/* <-- Seventh page -->*/
+    padding: 50px;
+}
+.map-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-top: 20px;
+    background-color:rgb(24, 22, 22);
+}
+/* <-- Footer -->*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    height: 10vh;
+    margin-top: 5px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color:rgb(24, 22, 22);
+}
+
+@media (max-width: 1400px) {
+    /* Стили для устройств, у которых ширина viewport меньше 1400 пикселей, но больше 990 пикселей. Эти стили будут использованы для планшетов и ноутбуков с низким разрешением */
+    .firstPage,.secondPage,.thirdPage,.fourthPage,.fifthPage,.sixthPage,footer{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+@media (max-width: 1110px) {
+    /* Стили для устройств, у которых ширина viewport меньше 1110 пикселей, но больше 990 пикселей. Эти стили будут использованы для планшетов и ноутбуков с низким разрешением */
+    .firstPage,.secondPage,.thirdPage,.fourthPage,.fifthPage,.sixthPage,footer{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .secondPage-images{
+        flex-direction: column;
+        align-self: center;
+        
+    }
+    
+    #firstImage{
+        height: 200px;
+        width: 200px;
+    }
+    #secondImage{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media(max-width: 750px){
+    .sixthPage-header-text{
+        font-size: 100px;
+    }
+    .sixthPage-Up-Images{
+        margin: 10px;
+    }
+    .sixthPage-Up-Images-second{
+        margin:10px;
+    }
+    .sixthPage-Down-Images-first{
+        margin: 10px;
+    }
+    .sixthPage-Down-Images-second{
+        margin: 10px;
+    }
+    .fourthPage-images{
+        flex-direction: column;
+    }
+
+}
